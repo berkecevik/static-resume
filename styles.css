@@ -422,8 +422,6 @@ form textarea {
     align-items: center;
     text-align: center;
 }
-<<<<<<< Updated upstream
-=======
 
 .project-list-wrapper {
     position: relative;
@@ -463,7 +461,6 @@ form textarea {
     background-color: #005bb5;
 }
 
->>>>>>> Stashed changes
 .projects-header {
     width: 100%;
     display: flex;
