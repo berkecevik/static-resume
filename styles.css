@@ -422,6 +422,48 @@ form textarea {
     align-items: center;
     text-align: center;
 }
+<<<<<<< Updated upstream
+=======
+
+.project-list-wrapper {
+    position: relative;
+    overflow: hidden; /* Ensures items stay inside the visible area */
+    width: 100%;
+}
+
+.project-list {
+    display: flex;
+    overflow-x: hidden; /* Hide scrollbars */
+    gap: 20px;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
+
+.slider-btn:hover {
+    background-color: #005bb5;
+}
+
+>>>>>>> Stashed changes
 .projects-header {
     width: 100%;
     display: flex;
@@ -447,14 +489,12 @@ form textarea {
 .project-item {
     display: flex;
     flex-direction: column; /* Stack content vertically */
-    justify-content: flex-start; /* Align content at the top */
-    align-items: flex-start; /* Align items to the left */
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px; /* Add padding for inner content */
-    width: 450px;
-    min-height: 350px; /* Set a minimum height for consistency */
+    padding: 70px; /* Add padding for inner content */
+    flex: 0 0 300px; /* Fix the size of each item */
+    scroll-snap-align: center;
 }
 
 .project-title {
