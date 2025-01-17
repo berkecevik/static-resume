@@ -1,0 +1,602 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Header */
+.navbar {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-icon {
+    width: 10px;
+    height: 10px;
+    background-color: #0073e6;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.role {
+    font-size: 14px;
+    color: #555;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Redesigned About Section */
+/* General Reset */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    padding: 50px;
+    background: linear-gradient(to left, rgb(224, 225, 221) 0%, rgb(224, 225, 221) 67%, rgb(27, 38, 59) 67%, rgb(27, 38, 59) 100%);
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    gap: 50px;
+}
+
+/* Profile Card */
+.profile-card {
+    background-color: rgb(65, 90, 119);
+    width: 300px;
+    height: 400px;
+    padding: 60px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px black;
+    text-align: center;
+    margin-left: 100px;
+    position: relative;
+    /* Ensures social links stay within the card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.profile-card h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profile-card hr {
+    width: 40px;
+    height: 3px;
+    background-color: #0073e6;
+    margin: 10px auto;
+    border: none;
+}
+
+.profile-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 10px 0;
+    border-radius: 0 0 5px 5px;
+    /* Rounded corners only at the bottom */
+    position: absolute;
+    bottom: 0;
+    /* Pin to the bottom of the card */
+    left: 0;
+    right: 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-links a:hover {
+    color: #005bb5;
+}
+
+
+.about-intro {
+    flex: 1;
+    padding: 0 20px;
+    /* Add horizontal padding for proper spacing */
+    margin-top: 0;
+    /* Remove unnecessary negative margin */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    /* Align text to the left */
+}
+
+.about-intro h1 {
+    font-size: 50px;
+    /* Adjust font size to match Maya's */
+    font-weight: bold;
+    /* Make it bold for emphasis */
+    color: #000;
+    /* Keep the text black */
+    margin-bottom: 10px;
+    /* Add spacing below the heading */
+}
+
+.about-intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    /* Increase line height for better readability */
+    color: #555;
+    /* Use a lighter shade for the paragraph */
+    margin-bottom: 20px;
+}
+
+.about-intro .buttons {
+    margin-top: 20px;
+    /* Add spacing above buttons */
+}
+
+.about-intro .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.about-intro .btn.primary {
+    background-color: #0073e6;
+    color: #fff;
+}
+
+.about-intro .btn.primary:hover {
+    background-color: #005bb5;
+}
+
+.about-intro .btn.secondary {
+    background-color: white;
+    color: #0073e6;
+    border: 2px solid #0073e6;
+}
+
+.about-intro .btn.secondary:hover {
+    background-color: #0073e6;
+    color: #fff;
+}
+
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.action-buttons {
+    margin-bottom: 20px;
+}
+
+.action-buttons .button {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.action-buttons .button:hover {
+    background-color: #005bb5;
+}
+
+/* RESUME SECTION */
+.resume {
+    background-color: #f6efe8;
+    /* Light beige background */
+    padding: 50px 20px;
+}
+
+.resume .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.resume-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* Space between Resume text and Download CV button */
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    /* Positions text and button at opposite ends */
+    align-items: center;
+    /* Aligns text and button vertically */
+    width: 100%;
+    /* Ensures the header spans the full width */
+    max-width: 700px; /* Match the card's width */
+    margin-bottom: -40px; /* Removes space below the header */
+}
+
+.experience-header h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #000;
+}
+
+.resume-header h2 {
+    font-size: 2em;
+    color: #000;
+    /* Black for the title */
+}
+
+.resume .button {
+    margin: 0;
+    background-color: #0049ff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.resume .button:hover {
+    background-color: #0036cc;
+}
+
+.resume h3 {
+    font-size: 1.5em;
+    color: #000;
+    /* Black for the subtitle */
+    margin: 0px;
+    text-align: center;
+}
+
+.experience-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.experience-left {
+    width: 40%; /* Adjust for left column */
+    line-height: 1;
+    text-align: left;
+
+}
+
+.experience-right {
+    width: 60%; /* Adjust for right column */
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.experience-card p {
+    margin: 10px 0;
+    color: #333; /* Dark gray text */
+    
+}
+
+.experience-left p:first-child {
+    color: #0049ff; /* Blue for dates */
+    font-weight: bold;
+}
+
+.skills-card {
+    background-color: #fff; /* White card background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    max-height: 500px;
+    margin: 0 auto;
+}
+
+.skills-top,
+.skills-bottom {
+    margin-bottom: 20px;
+}
+
+.skills-top p,
+.skills-bottom p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000; /* Black for headings */
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to a new line */
+    gap: 20px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    width: calc(50% - 10px); /* Ensures two items per row with spacing */
+}
+
+.skill-icon {
+    width: 10px;
+    height: 10px;
+    background-color: #0049ff; /* Blue square */
+    margin-right: 10px;
+    border-radius: 2px; /* Optional, for smoother edges */
+}
+
+.skill-item p {
+    margin: 0;
+    color: #333; /* Dark gray text */
+    font-size: 1em;
+}
+
+
+/* Project */
+.projects {
+    background-color: #f6efe8; /* Light beige background */
+    padding: 50px 20px;
+}
+
+.projects .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.projects-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.projects h2 {
+    font-size: 2em;
+    color: #000; /* Black text */
+}
+
+.projects-intro {
+    font-size: 1em;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    color: #555; /* Gray text */
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto; /* Center alignment */
+    overflow: hidden; /* Fix overflow issue */
+}
+
+.project-title{
+    font-size: 1em;
+    color: #000; /* Black text */
+    margin-top: -70px;
+    line-height: 0.1;
+}
+.project-text {
+    width: 60%; /* Adjust for the text section */
+    text-align: left;
+}
+
+.project-text h3 {
+    color: #0049ff; /* Blue text for title */
+    font-size: 1.5em;
+}
+
+.role-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1em;
+    margin-top: 25px;
+}
+
+.project-description{
+    margin-top: 60px;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555; /* Gray text */
+}
+
+
+.project-image {
+    width: 35%; /* Adjust for the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Ensure the image fits well */
+}
+
+/* Contact */
+.contact {
+    background-color: #f6efe8; /* Light beige background */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #000; /* Black text */
+    position: relative;
+}
+
+.contact h2::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #0049ff; /* Blue square */
+    display: inline-block;
+    position: absolute;
+    left: -20px;
+    top: 10px;
+}
+
+form {
+    background-color: #fff; /* White form background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #333;
+}
+
+form input,
+form textarea {
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 10px 5px;
+    font-size: 1em;
+    color: #333;
+    outline: none;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+
+form textarea {
+    resize: none;
+    height: 100px;
+}
+
+form button {
+    background-color: #0049ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0036cc;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
