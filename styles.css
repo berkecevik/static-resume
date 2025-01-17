@@ -5,11 +5,23 @@
     box-sizing: border-box;
 }
 
+/* Global font settings */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Default body font */
     color: #333;
     background-color: #fff;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif; /* Headings font */
+}
+
+/* Form input styles */
+form input,
+form textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
 
 /* Header */
 .navbar {
@@ -60,6 +72,7 @@ body {
 }
 
 .nav-links a {
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: #000000;
     font-size: 14px;
@@ -175,6 +188,7 @@ body {
 }
 
 .about-intro h1 {
+    font-family: 'Lora', serif;
     font-size: 50px;
     /* Adjust font size to match Maya's */
     font-weight: bold;
@@ -414,6 +428,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-top: -40px;
 }
 
 .projects h2 {
@@ -427,33 +442,39 @@ body {
     margin-bottom: -20px;
     color: #555; /* Gray text */
     line-height: 1.6;
-    max-width: 800px;
 }
 
 .project-item {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start; /* Align content at the top */
+    align-items: flex-start; /* Align items to the left */
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto; /* Center alignment */
-    overflow: hidden; /* Fix overflow issue */
+    padding: 20px; /* Add padding for inner content */
+    width: 450px;
+    min-height: 350px; /* Set a minimum height for consistency */
 }
 
-.project-title{
-    font-size: 1em;
-    color: #000; /* Black text */
-    margin-top: -70px;
-    line-height: 0.1;
+.project-title {
+    font-size: 1.5em; /* Increase font size for better visibility */
+    color: #0049ff; /* Blue text */
+    margin: 0; /* Remove unnecessary margin */
+    padding-bottom: 10px; /* Add spacing below the title */
+    line-height: 1.2; /* Adjust line height */
 }
+
 .project-text {
-    width: 60%; /* Adjust for the text section */
-    text-align: left;
+    width: 100%; /* Ensure it spans the card width */
+    text-align: left; /* Align text to the left */
+}
+
+.project-description {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555; /* Gray text */
+    margin-top: 10px; /* Add space between the title and description */
 }
 
 .project-text h3 {
@@ -469,28 +490,6 @@ body {
     margin-top: 25px;
 }
 
-.project-description{
-    margin-top: 60px;
-    font-size: 1em;
-    line-height: 1.5;
-    color: #555; /* Gray text */
-}
-
-
-.project-image {
-    width: 35%; /* Adjust for the image */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    object-fit: cover; /* Ensure the image fits well */
-}
 
 /* Contact */
 .contact {
