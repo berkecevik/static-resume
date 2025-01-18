@@ -20,8 +20,13 @@
                 <span class="logo-text">Berke Cevik</span>
                 <span class="role">/ Jr. Software Engineer</span>
             </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <nav class="nav-links">
-                <a href="#about">ABOUT ME</a>
+                <a href="#about-section">ABOUT ME</a>
                 <a href="#resume">RESUME</a>
                 <a href="#projects">PROJECTS</a>
                 <a href="#contact">CONTACT</a>
@@ -30,7 +35,7 @@
     </header>
 
 
-    <section class="about-section">
+    <section id="about-section" class="about-section">
         <div class="container">
             <div class="profile-card">
                 <img src="/assets/images/profile.jpg" alt="Berke">
@@ -38,19 +43,23 @@
                 <hr>
                 <p>Software Engineer</p>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/berkecevik/" class="fa fa-linkedin" style="color: black;" target="_blank" rel="noopener noreferrer"></a>
-                    <a href="https://github.com/berkecevik" class="fa fa-github" style="color: black;" target="_blank" rel="noopener noreferrer"></a>
-                    <a href="https://www.instagram.com/berkeceviks/" class="fa fa-instagram" style="color: black;" target="_blank" rel="noopener noreferrer"></a>
+                    <a href="https://www.linkedin.com/in/berkecevik/" class="fa fa-linkedin" style="color: black;"
+                        target="_blank" rel="noopener noreferrer"></a>
+                    <a href="https://github.com/berkecevik" class="fa fa-github" style="color: black;" target="_blank"
+                        rel="noopener noreferrer"></a>
+                    <a href="https://www.instagram.com/berkeceviks/" class="fa fa-instagram" style="color: black;"
+                        target="_blank" rel="noopener noreferrer"></a>
                 </div>
             </div>
             <div class="about-intro">
-                <h1>Hello,</h1>
-                <p>Welcome to my portfolio!</p>
+                <h1 class="first-text">
+                    <span id="typing-line1"></span>
+                    <br>
+                    <span id="typing-line2"></span>
+                </h1>
                 <div class="buttons">
-                    <button type="button" class="btn btn-outline-dark" onclick="location.href='#resume'">RESUME</button>
-                    <button type="button" class="btn btn-outline-dark"
-                        onclick="location.href='#projects'">PROJECTS</button>
-
+                    <a href="https://github.com/berkecevik" class="neon-button neon-button__1" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="assets/documents/cv_NurettinBerkeCevik.pdf" class="neon-button neon-button__2" download="cv_NurettinBerkeCevik.pdf" aria-label="Download CV">Download CV</a>
                 </div>
                 <p>Here, you can explore my journey, skills, and projects that showcase my
                     expertise as a software engineer. I am passionate about creating innovative solutions, and this
@@ -72,7 +81,12 @@
             </div>
             <div class="experience-header">
                 <h3>Experience</h3>
-                <a href="cv.pdf" class="button">Download CV</a>
+                <a href="assets/documents/cv_NurettinBerkeCevik.pdf" class="button" download="cv_NurettinBerkeCevik.pdf" aria-label="Download CV">
+                    <div class="icon">
+                        <div class="arrow"></div>
+                    </div>
+                    Download CV
+                </a>
             </div>
             <div class="experience-card">
                 <div class="experience-left">
@@ -207,8 +221,9 @@
             </div>
             <div class="projects-intro">
                 <p>Here are some of the projects I have worked on. Click on the project to learn more about it.</p>
-                <p> Want to explore more of my work? Check out my <a href="https://github.com/berkecevik" target="_blank"
-                    rel="noopener noreferrer">GitHub</a> for a complete list of repositories and code samples!</p>
+                <p> Want to explore more of my work? Check out my <a href="https://github.com/berkecevik"
+                        target="_blank" rel="noopener noreferrer">GitHub</a> for a complete list of repositories and
+                    code samples!</p>
             </div>
             <div class="project-list-wrapper">
                 <button id="prev-btn" class="slider-btn">❮</button>
