@@ -25,7 +25,7 @@ form textarea {
 
 /* Header */
 .navbar {
-    background-color: #fff;
+    background-color: rgba(20,28,39,255);
     top: 0; /* Aligns it to the top of the viewport */
     width: 100%; /* Ensures it spans the full width */
     z-index: 1000; /* Keeps it above other elements */
@@ -46,12 +46,13 @@ form textarea {
     display: flex;
     align-items: center;
     gap: 8px;
+    color: #f4f5f5;
 }
 
 .logo-icon {
     width: 10px;
     height: 10px;
-    background-color: #0073e6;
+    background-color: #f4f5f5;
     display: inline-block;
     border-radius: 2px;
 }
@@ -59,11 +60,12 @@ form textarea {
 .logo-text {
     font-weight: bold;
     font-size: 18px;
+    color: #f4f5f5;
 }
 
 .role {
     font-size: 14px;
-    color: #555;
+    color: #f4f5f5;
 }
 
 .nav-links {
@@ -74,7 +76,7 @@ form textarea {
 .nav-links a {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    color: #000000;
+    color: #f4f5f5;
     font-size: 14px;
 }
 
