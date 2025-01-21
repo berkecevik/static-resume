@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 
 /* Global font settings */
 body {
@@ -106,7 +110,10 @@ form textarea {
 
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
+        display: none; /* Hide by default */
+    }
+    .nav-links.show {
+        display: flex; /* Show when toggled */
         flex-direction: column;
         gap: 10px;
         position: absolute;
@@ -116,10 +123,7 @@ form textarea {
         padding: 10px 20px;
         border-radius: 8px;
     }
-
-    .nav-links.show {
-        display: flex;
-    }
+    
 
     .hamburger {
         display: flex;
@@ -443,6 +447,56 @@ form textarea {
 .action-buttons .button:hover {
     background-color: #005bb5;
 }
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column; /* Stack items vertically */
+        padding: 20px; /* Reduce padding */
+        height: auto; /* Adjust height */
+        padding-top: 80px;
+    }
+
+    .about-section .container {
+        gap: 20px; /* Reduce the gap between items */
+        flex-direction: column; /* Stack child elements */
+        text-align: center; /* Center align text */
+    }
+
+    .profile-card {
+        margin: 0 auto; /* Center the profile card */
+        width: 80%; /* Reduce width */
+        height: auto; /* Let the height adjust naturally */
+        margin-top: 20px;
+    }
+    
+    .about-intro h1 {
+        font-size: 1.5rem; /* Reduce heading size */
+    }
+
+    .about-intro p {
+        font-size: 1rem; /* Adjust paragraph font size */
+    }
+
+    .buttons {
+        flex-wrap: wrap; /* Allow buttons to wrap */
+        justify-content: center; /* Center align buttons */
+        margin: 1rem 0;
+    }
+
+    .buttons .neon-button {
+        margin: 0.5rem; /* Adjust button spacing */
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-section {
+        height: auto;
+    }
+    .about-intro{
+        height: auto;
+    }
+}
+
 
 /* RESUME SECTION */
 .resume {
